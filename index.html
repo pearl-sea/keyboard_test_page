@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./keyboard.js" defer></script>
+    <title>Keyboard test</title>
+  </head>
+  <body>
+    <div class="keyboard">
+      <h1>keyboard test</h1>
+      <p>Mac 사용자일 경우 F1~F12키를 테스트할때 Fn키를 같이 눌러 주세요.</p>
+      <div class="row space-between">
+        <p>
+          지금 입력한 키는 [<span class="current-key">아직 없음</span>]입니다.
+        </p>
+        <button class="reset" type="button">초기화</button>
+      </div>
+      <div class="row space-between">
+        <div class="left row space-between">
+          <div class="keygroup">
+            <div class="keycap" data-key="Escape">
+              <span>Esc</span>
+            </div>
+          </div>
+          <div class="keygroup">
+            <div class="keycap" data-key="F1">
+              <span>F1</span>
+            </div>
+            <div class="keycap" data-key="F2">
+              <span>F2</span>
+            </div>
+            <div class="keycap" data-key="F3">
+              <span>F3</span>
+            </div>
+            <div class="keycap" data-key="F4">
+              <span>F4</span>
+            </div>
+          </div>
+          <div class="keygroup">
+            <div class="keycap" data-key="F5">
+              <span>F5</span>
+            </div>
+            <div class="keycap" data-key="F6">
+              <span>F6</span>
+            </div>
+            <div class="keycap" data-key="F7">
+              <span>F7</span>
+            </div>
+            <div class="keycap" data-key="F8">
+              <span>F8</span>
+            </div>
+          </div>
+          <div class="keygroup">
+            <div class="keycap" data-key="F9">
+              <span>F9</span>
+            </div>
+            <div class="keycap" data-key="F10">
+              <span>F10</span>
+            </div>
+            <div class="keycap" data-key="F11">
+              <span>F11</span>
+            </div>
+            <div class="keycap" data-key="F12">
+              <span>F12</span>
+            </div>
+          </div>
+        </div>
+        <div class="right row">
+          <div class="keycap" data-key="PrintScreen">
+            <span>PrtSc</span>
+          </div>
+          <div class="keycap" data-key="ScrollLock">
+            <span>ScrLk</span>
+          </div>
+          <div class="keycap" data-key="Pause">
+            <span>Pause</span>
+          </div>
+        </div>
+      </div>
+      <div class="row left">
+        <div class="keycap" data-key="`">
+          <span>`~</span>
+        </div>
+        <div class="keycap" data-key="1">
+          <span>1!</span>
+        </div>
+        <div class="keycap" data-key="2">
+          <span>2@</span>
+        </div>
+        <div class="keycap" data-key="3">
+          <span>3#</span>
+        </div>
+        <div class="keycap" data-key="4">
+          <span>4$</span>
+        </div>
+        <div class="keycap" data-key="5">
+          <span>5%</span>
+        </div>
+        <div class="keycap" data-key="6">
+          <span>6^</span>
+        </div>
+        <div class="keycap" data-key="7">
+          <span>7&</span>
+        </div>
+        <div class="keycap" data-key="8">
+          <span>8*</span>
+        </div>
+        <div class="keycap" data-key="9">
+          <span>9(</span>
+        </div>
+        <div class="keycap" data-key="0">
+          <span>0)</span>
+        </div>
+        <div class="keycap" data-key="-">
+          <span>-_</span>
+        </div>
+        <div class="keycap" data-key="=">
+          <span>=+</span>
+        </div>
+        <div class="keycap size1" data-key="Backspace">
+          <span>←</span>
+        </div>
+      </div>
+      <div class="row left">
+        <div class="keycap size2" data-key="Tab">
+          <span>Tab</span>
+        </div>
+        <div class="keycap" data-key="KeyQ">
+          <span>Q</span>
+        </div>
+        <div class="keycap" data-key="KeyW">
+          <span>W</span>
+        </div>
+        <div class="keycap" data-key="KeyE">
+          <span>E</span>
+        </div>
+        <div class="keycap" data-key="KeyR">
+          <span>R</span>
+        </div>
+        <div class="keycap" data-key="KeyT">
+          <span>T</span>
+        </div>
+        <div class="keycap" data-key="KeyY">
+          <span>Y</span>
+        </div>
+        <div class="keycap" data-key="KeyU">
+          <span>U</span>
+        </div>
+        <div class="keycap" data-key="KeyI">
+          <span>I</span>
+        </div>
+        <div class="keycap" data-key="KeyO">
+          <span>O</span>
+        </div>
+        <div class="keycap" data-key="KeyP">
+          <span>P</span>
+        </div>
+        <div class="keycap" data-key="[">
+          <span>[</span>
+        </div>
+        <div class="keycap" data-key="]">
+          <span>]</span>
+        </div>
+        <div class="keycap size2" data-key="\">
+          <span>\|</span>
+        </div>
+      </div>
+      <div class="row left">
+        <div class="keycap size3" data-key="CapsLock">
+          <span>CapsLock</span>
+        </div>
+        <div class="keycap" data-key="KeyA">
+          <span>A</span>
+        </div>
+        <div class="keycap" data-key="KeyS">
+          <span>S</span>
+        </div>
+        <div class="keycap" data-key="KeyD">
+          <span>D</span>
+        </div>
+        <div class="keycap" data-key="KeyF">
+          <span>F</span>
+        </div>
+        <div class="keycap" data-key="KeyG">
+          <span>G</span>
+        </div>
+        <div class="keycap" data-key="KeyH">
+          <span>H</span>
+        </div>
+        <div class="keycap" data-key="KeyJ">
+          <span>J</span>
+        </div>
+        <div class="keycap" data-key="KeyK">
+          <span>K</span>
+        </div>
+        <div class="keycap" data-key="KeyL">
+          <span>L</span>
+        </div>
+        <div class="keycap" data-key=";">
+          <span>;</span>
+        </div>
+        <div class="keycap" data-key="'">
+          <span>'</span>
+        </div>
+        <div class="keycap size4" data-key="Enter">
+          <span>Enter</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left row">
+          <div class="keycap size4" data-key="ShiftLeft">
+            <span>Shift</span>
+          </div>
+          <div class="keycap" data-key="KeyZ">
+            <span>Z</span>
+          </div>
+          <div class="keycap" data-key="KeyX">
+            <span>X</span>
+          </div>
+          <div class="keycap" data-key="KeyC">
+            <span>C</span>
+          </div>
+          <div class="keycap" data-key="KeyV">
+            <span>V</span>
+          </div>
+          <div class="keycap" data-key="KeyB">
+            <span>B</span>
+          </div>
+          <div class="keycap" data-key="KeyN">
+            <span>N</span>
+          </div>
+          <div class="keycap" data-key="KeyM">
+            <span>M</span>
+          </div>
+          <div class="keycap" data-key=",">
+            <span>,&lt;</span>
+          </div>
+          <div class="keycap" data-key=".">
+            <span>.&gt;</span>
+          </div>
+          <div class="keycap" data-key="/">
+            <span>/?</span>
+          </div>
+          <div class="keycap size5" data-key="ShiftRight">
+            <span>Shift</span>
+          </div>
+        </div>
+        <div class="right row center">
+          <div class="keycap" data-key="ArrowUp">
+            <span>▲</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left row">
+          <div class="keycap size6" data-key="ControlLeft">
+            <span>Ctrl</span>
+          </div>
+          <div class="keycap size6" data-key="MetaLeft">
+            <span>Meta</span>
+          </div>
+          <div class="keycap size6" data-key="AltLeft">
+            <span>Alt</span>
+          </div>
+          <div class="keycap size7" data-key="Space">
+            <span>Space</span>
+          </div>
+          <div class="keycap size6" data-key="AltRight">
+            <span>Alt</span>
+          </div>
+          <div class="keycap size6 disabled" data-key="MetaRight">
+            <span>Fn</span>
+          </div>
+          <div class="keycap size6" data-key="ContextMenu">
+            <span>Menu</span>
+          </div>
+          <div class="keycap size6" data-key="ControlRight">
+            <span>Ctrl</span>
+          </div>
+        </div>
+
+        <div class="right row">
+          <div class="keycap" data-key="ArrowLeft">
+            <span>◀</span>
+          </div>
+          <div class="keycap" data-key="ArrowDown">
+            <span>▼</span>
+          </div>
+          <div class="keycap" data-key="ArrowRight">
+            <span>▶</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

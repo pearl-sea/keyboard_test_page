@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+}
+h1 {
+    text-transform: uppercase;
+    margin: 0 0 .3125rem;
+    text-align: center;
+
+}
+.keyboard > p {
+    text-align: center;
+    margin: 0 0 1.875rem;
+}
+
+.keyboard {
+    width: 1250px;
+    margin: 0 auto;
+    padding: 10% 0 0;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+.left {
+    width: calc(100% - 12.5rem);
+}
+.right {
+    width: 12.5rem;
+}
+.right.center {
+    justify-content: center;
+}
+.row {
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+}
+.keygroup {
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+}
+.space-between {
+    justify-content: space-between;
+}
+.keycap {
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.keycap.size1 {
+    width: 130px;
+}
+.keycap.size2 {
+    width: 95px;
+}
+.keycap.size3 {
+    width: 115px;
+}
+.keycap.size4 {
+    width: 145px;
+}
+.keycap.size5 {
+    width: 186px;
+}
+.keycap.size6 {
+    width: 80px;
+}
+.keycap.size7 {
+    width: 410px;
+}
+.disabled {
+    background: #aaa;
+}
